@@ -20,7 +20,7 @@ namespace Lanchonete
 
 
 
-        Estoque(string nome, int quantidade)
+        public Estoque(string nome, int quantidade)
         {
             this.nome = nome;
             this.quantidade = quantidade;

@@ -20,6 +20,8 @@ namespace Lanchonete
             Console.WriteLine(@"|_|                                              |___/                 ");
 
             Console.WriteLine(" Faca o seu pedido:");
+
+            
         }
 
 
