@@ -26,10 +26,8 @@ namespace Lanchonete
 
         public static void MenuInicial()
         {
-            Console.WriteLine("\n\n\n Escolha uma opcao:");
-            Console.WriteLine("1 - Vender Lanche\n2-");
-
-
+            Console.WriteLine("\n\n\nEscolha uma opcao:");
+            Console.WriteLine("1 - Vender Lanche\n2-Fechar conta\n3-Estoque\n4-Ganho do Dia");
 
         }
 

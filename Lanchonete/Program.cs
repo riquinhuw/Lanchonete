@@ -10,6 +10,7 @@ namespace Lanchonete
     {
         static void Main(string[] args)
         {
+            int respotaMenu = 0;
             Menu.Logo();
 
             Estoque produto1 = new Estoque("Pao de Hambuguer",65);
@@ -23,6 +24,20 @@ namespace Lanchonete
 
             Console.WriteLine(produto1.Quantidade);
 
+            Menu.MenuInicial();
+            respotaMenu = int.Parse(Console.ReadLine());
+
+            switch (respotaMenu)
+            {
+                //Vender produto
+                case 1:
+
+
+
+                break;
+
+
+            }
 
         }
     }
