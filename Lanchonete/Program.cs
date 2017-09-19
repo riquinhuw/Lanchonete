@@ -18,6 +18,12 @@ namespace Lanchonete
             Estoque produto4 = new Estoque("Frango Assado",25);
             Estoque produto5 = new Estoque("Refrigerante 300ml", 100);
 
+           produto1.Quantidade = Prato.Hambuguer2(produto1.Quantidade);
+
+
+            Console.WriteLine(produto1.Quantidade);
+
+
         }
     }
 }

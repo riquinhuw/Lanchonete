@@ -47,7 +47,6 @@
     <Compile Include="Menu.cs" />
     <Compile Include="Mesa.cs" />
     <Compile Include="Pagamento.cs" />
-    <Compile Include="Pedido.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

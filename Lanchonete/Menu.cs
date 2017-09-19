@@ -24,6 +24,15 @@ namespace Lanchonete
             
         }
 
+        public static void MenuInicial()
+        {
+            Console.WriteLine("\n\n\n Escolha uma opcao:");
+            Console.WriteLine("1 - Vender Lanche\n2-");
+
+
+
+        }
+
 
     }
 }
