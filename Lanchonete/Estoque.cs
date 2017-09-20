@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lanchonete
 {
-    class Estoque
+    public class Estoque
     {
         #region Propriedades
         private string nome;
@@ -18,8 +18,9 @@ namespace Lanchonete
         public int Quantidade { get => quantidade; set => quantidade = value; }
         #endregion
 
+        
 
-
+        public Estoque() { }
         public Estoque(string nome, int quantidade)
         {
             this.nome = nome;

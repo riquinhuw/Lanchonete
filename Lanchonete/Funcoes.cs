@@ -28,6 +28,8 @@ namespace Lanchonete
             string nome;
             double preco;
 
+            int numeroMesa=0;
+
             do
             {
                 Console.WriteLine("Selecione algo para vender");
@@ -53,7 +55,19 @@ namespace Lanchonete
 
                 }
 
-                
+                Console.WriteLine("Digite o numero da mesa");
+                numeroMesa= int.Parse(Console.ReadLine());
+                switch (numeroMesa)
+                {
+                    case 1:
+
+
+                    break;
+
+
+
+
+                }
 
                 Console.WriteLine("Deseja fazer outra venda?");
                 respostaLooping = Console.ReadLine();

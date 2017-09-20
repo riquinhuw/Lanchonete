@@ -21,7 +21,8 @@ namespace Lanchonete
 
             Console.WriteLine(" Faca o seu pedido:");
 
-            
+            Program.produto6.Quantidade = 10;
+
         }
 
         public static void MenuInicial()
@@ -32,5 +33,8 @@ namespace Lanchonete
         }
 
 
+        
+        
     }
+
 }

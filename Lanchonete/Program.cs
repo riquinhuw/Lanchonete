@@ -8,19 +8,25 @@ namespace Lanchonete
 {
     class Program
     {
-        static void Main(string[] args)
+        public static Estoque produto1 = new Estoque("Pao de Hambuguer", 65);
+        public static Estoque produto2 = new Estoque("Hambuguer", 50);
+        public static Estoque produto3 = new Estoque("Queijo Prato", 50);
+        public static Estoque produto4 = new Estoque("Frango Assado", 25);
+        public static Estoque produto5 = new Estoque("Refrigerante 300ml", 100);
+
+        static void Main()
         {
             int respotaMenu = 0;
+            
             Menu.Logo();
 
-            Estoque produto1 = new Estoque("Pao de Hambuguer",65);
-            Estoque produto2 = new Estoque("Hambuguer",50);
-            Estoque produto3 = new Estoque("Queijo Prato",50);
-            Estoque produto4 = new Estoque("Frango Assado",25);
-            Estoque produto5 = new Estoque("Refrigerante 300ml", 100);
+            //Estoque produto1 = new Estoque("Pao de Hambuguer",65);
+            //Estoque produto2 = new Estoque("Hambuguer",50);
+            //Estoque produto3 = new Estoque("Queijo Prato",50);
+            //Estoque produto4 = new Estoque("Frango Assado",25);
+            //Estoque produto5 = new Estoque("Refrigerante 300ml", 100);
 
-           produto1.Quantidade = Prato.Hambuguer2(produto1.Quantidade);
-
+                
 
             Console.WriteLine(produto1.Quantidade);
 
@@ -32,12 +38,25 @@ namespace Lanchonete
                 //Vender produto
                 case 1:
 
+                    
 
+                    break;
 
-                break;
-
-
+                    
             }
+
+        }
+
+        static void Sair()
+        {
+            Console.WriteLine("Você deseja continuar?(s/n)");
+            
+        }
+
+        public static void VenderHambuguer()
+        {
+
+            Console.WriteLine("haha");
 
         }
     }
