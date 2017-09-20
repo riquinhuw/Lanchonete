@@ -21,7 +21,7 @@ namespace Lanchonete
 
             Console.WriteLine(" Faca o seu pedido:");
 
-            Program.produto6.Quantidade = 10;
+            
 
         }
 
@@ -29,6 +29,8 @@ namespace Lanchonete
         {
             Console.WriteLine("\n\n\nEscolha uma opcao:");
             Console.WriteLine("1 - Vender Lanche\n2-Fechar conta\n3-Estoque\n4-Ganho do Dia");
+
+
 
         }
 

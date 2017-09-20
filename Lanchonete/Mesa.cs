@@ -16,6 +16,13 @@ namespace Lanchonete
         public double Gasto { get => gasto; set => gasto = value; }
 
 
+        public Mesa(int numero, double gasto)
+        {
+            this.numero = numero;
 
+            this.gasto = gasto;
+
+
+        }
     }
 }

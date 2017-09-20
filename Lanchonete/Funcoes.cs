@@ -26,7 +26,7 @@ namespace Lanchonete
             double preco5;
 
             string nome;
-            double preco;
+            double preco = 0;
 
             int numeroMesa=0;
 
@@ -60,13 +60,30 @@ namespace Lanchonete
                 switch (numeroMesa)
                 {
                     case 1:
-
+                        Program.mesa1.Gasto = Program.mesa1.Gasto + preco;
 
                     break;
 
 
+                    case 2:
+                        Program.mesa1.Gasto = Program.mesa2.Gasto + preco;
 
+                        break;
 
+                    case 3:
+                        Program.mesa1.Gasto = Program.mesa3.Gasto + preco;
+
+                        break;
+
+                    case 4:
+                        Program.mesa1.Gasto = Program.mesa4.Gasto + preco;
+
+                        break;
+
+                    case 5:
+                        Program.mesa1.Gasto = Program.mesa5.Gasto + preco;
+
+                        break;
                 }
 
                 Console.WriteLine("Deseja fazer outra venda?");
