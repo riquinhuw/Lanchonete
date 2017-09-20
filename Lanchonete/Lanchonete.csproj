@@ -43,11 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Estoque.cs" />
-    <Compile Include="Funcionario.cs" />
     <Compile Include="Funcoes.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Mesa.cs" />
-    <Compile Include="Pagamento.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

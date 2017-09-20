@@ -18,6 +18,7 @@ namespace Lanchonete
         public static Mesa mesa3 = new Mesa(3, 00.00);
         public static Mesa mesa4 = new Mesa(4, 00.00);
         public static Mesa mesa5 = new Mesa(5, 00.00);
+        public static double ganhoDoDia = 00.00;
 
         static void Main()
         {
@@ -25,6 +26,7 @@ namespace Lanchonete
             bool looping = true;
             do
             {
+                Console.Clear();
                 Menu.Logo();
                 Menu.MenuInicial();
                 respotaMenu = int.Parse(Console.ReadLine());
@@ -33,12 +35,40 @@ namespace Lanchonete
                 {
                     //Vender produto
                     case 1:
-
+                        
+                        Console.WriteLine("VENDER");
                         Funcoes.Vender();
                         break;
 
                     case 2:
                         Funcoes.FecharConta();
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        Menu.Logo();
+                        Console.WriteLine("ESTOQUE\n\n");
+                        Console.WriteLine("{0} possiu {1} unidades",produto1.Nome,produto1.Quantidade);
+                        Console.WriteLine("{0} possiu {1} unidades",produto2.Nome,produto2.Quantidade);
+                        Console.WriteLine("{0} possiu {1} unidades",produto3.Nome,produto3.Quantidade);
+                        Console.WriteLine("{0} possiu {1} unidades",produto4.Nome,produto4.Quantidade);
+                        Console.WriteLine("{0} possiu {1} unidades",produto5.Nome,produto5.Quantidade);
+                        break;
+
+                    case 4:
+                        Console.Clear();
+                        Menu.Logo();
+
+                        Console.WriteLine("O ganho do dia foi de {0}R$", ganhoDoDia);
+                        Console.WriteLine("Deseja sair do programa?(s/n)");
+                        if (Console.ReadLine() == "s") { looping = false; }
+                        break;
+
+                    case 5:
+                        Console.WriteLine("Deseja realemente sair?(s/n)");
+                        if(Console.ReadLine() == "s") { looping = false; }
+
+
                         break;
 
                     default:
