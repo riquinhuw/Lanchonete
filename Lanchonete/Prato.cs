@@ -10,19 +10,25 @@ namespace Lanchonete
     {
        // DANI-SE AS CLASSESSS VOU TACAR NO MAIN USANDO IF PQP
 
-        public static Estoque Hambuguer(Estoque entradaComida )
+        public static void XBuguer()
         {
-            Estoque entrada = entradaComida;
-            entrada.Quantidade = entrada.Quantidade - 1;
-
-            return entrada;
+            Program.produto1.Quantidade = Program.produto1.Quantidade - 1; //Pao
+            Program.produto2.Quantidade = Program.produto1.Quantidade - 1; // Carne
+            Program.produto3.Quantidade = Program.produto1.Quantidade - 1; // Queijo
         }
 
-        public static int Hambuguer2(int entradaComida)
+        public static void XFrango()
         {
-            
-            entradaComida = entradaComida - 1;
-            return entradaComida;
+            Program.produto1.Quantidade = Program.produto1.Quantidade - 1; // Pao
+            Program.produto3.Quantidade = Program.produto1.Quantidade - 1; // Queijo
+            Program.produto4.Quantidade = Program.produto1.Quantidade - 1; // Frango
+        }
+
+        public static void Refrigerante()
+        {
+            Program.produto5.Quantidade = Program.produto1.Quantidade - 1; // Refri
+
+
         }
 
 

@@ -18,19 +18,12 @@ namespace Lanchonete
             Console.WriteLine(@"| |_) | (_) | (_| | | | (_| | (_) | | |_) | |_| | (_| | |_| |  __/ |   ");
             Console.WriteLine(@"| .__/ \___/ \__,_|_|  \__,_|\___/  |_.__/ \__,_|\__, |\__,_|\___|_|  ");
             Console.WriteLine(@"|_|                                              |___/                 ");
-
-            Console.WriteLine(" Faca o seu pedido:");
-
-            
-
         }
 
         public static void MenuInicial()
         {
             Console.WriteLine("\n\n\nEscolha uma opcao:");
             Console.WriteLine("1 - Vender Lanche\n2-Fechar conta\n3-Estoque\n4-Ganho do Dia");
-
-
 
         }
 

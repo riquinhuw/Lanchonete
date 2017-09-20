@@ -40,16 +40,19 @@ namespace Lanchonete
                     case 1:
                         nome = "XBuguer";
                         preco = 10.00;
+                        Prato.XBuguer();
                     break;
 
                     case 2:
                         nome = "XFrango";
                         preco = 9.00;
+                        Prato.XFrango();
                     break;
 
                     case 3:
                         nome = "Refrigerante";
                         preco = 3.00;
+                        Prato.Refrigerante();
                     break;
 
 
@@ -66,22 +69,22 @@ namespace Lanchonete
 
 
                     case 2:
-                        Program.mesa1.Gasto = Program.mesa2.Gasto + preco;
+                        Program.mesa2.Gasto = Program.mesa2.Gasto + preco;
 
                         break;
 
                     case 3:
-                        Program.mesa1.Gasto = Program.mesa3.Gasto + preco;
+                        Program.mesa3.Gasto = Program.mesa3.Gasto + preco;
 
                         break;
 
                     case 4:
-                        Program.mesa1.Gasto = Program.mesa4.Gasto + preco;
+                        Program.mesa4.Gasto = Program.mesa4.Gasto + preco;
 
                         break;
 
                     case 5:
-                        Program.mesa1.Gasto = Program.mesa5.Gasto + preco;
+                        Program.mesa5.Gasto = Program.mesa5.Gasto + preco;
 
                         break;
                 }
@@ -90,6 +93,223 @@ namespace Lanchonete
                 respostaLooping = Console.ReadLine();
                 if (respostaLooping == "n") { loopingVenda = false; }
             } while (loopingVenda);
+        }
+
+        public static void FecharConta()
+        {
+            int numeroDaMesaAFechar=0;
+            Console.WriteLine("Digite a mesa que deseja FECHAR:");
+            numeroDaMesaAFechar = int.Parse(Console.ReadLine());
+            double pagamento = 0;
+            double recebido = 0;
+            switch (numeroDaMesaAFechar)
+            {
+                case 1:
+
+                    Console.WriteLine("A mesa 1 consumiu no total {0}R$",Program.mesa1.Gasto);
+                    #region Metodo de Pagamento
+                    Console.WriteLine("Escolha a forma de pagamento:/n");
+                    Console.WriteLine("1-Debito\n2-Credito\n3-A vista\n");
+                    pagamento = double.Parse(Console.ReadLine());
+                    switch (pagamento)
+                    {
+                        //Debito
+                        case 1:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //Credito
+                        case 2:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //a vista
+                        case 3:
+
+                            Console.WriteLine("TOTAL A PAGAR:{0}R$", Program.mesa1.Gasto);
+                            Console.WriteLine("Digite o valor recebido");
+                            recebido = double.Parse(Console.ReadLine());
+                            Console.WriteLine("O Troco é de {0}R$", recebido - Program.mesa1.Gasto);
+                            Console.WriteLine("Ogrigada pela compra, VOLTE SEMPRE");
+                            break;
+                    }
+                    #endregion
+
+                    break;
+
+                case 2:
+
+                    Console.WriteLine("A mesa 1 consumiu no total {0}R$", Program.mesa2.Gasto);
+                    #region Metodo de Pagamento
+                    Console.WriteLine("Escolha a forma de pagamento:/n");
+                    Console.WriteLine("1-Debito\n2-Credito\n3-A vista\n");
+                    pagamento = double.Parse(Console.ReadLine());
+                    switch (pagamento)
+                    {
+                        //Debito
+                        case 1:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //Credito
+                        case 2:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //a vista
+                        case 3:
+
+                            Console.WriteLine("TOTAL A PAGAR:{0}R$", Program.mesa2.Gasto);
+                            Console.WriteLine("Digite o valor recebido");
+                            recebido = double.Parse(Console.ReadLine());
+                            Console.WriteLine("O Troco é de {0}R$", recebido - Program.mesa2.Gasto);
+                            Console.WriteLine("Ogrigada pela compra, VOLTE SEMPRE");
+                            break;
+                    }
+                    #endregion
+                    break;
+
+                case 3:
+
+                    Console.WriteLine("A mesa 1 consumiu no total {0}R$", Program.mesa3.Gasto);
+                    #region Metodo de Pagamento
+                    Console.WriteLine("Escolha a forma de pagamento:/n");
+                    Console.WriteLine("1-Debito\n2-Credito\n3-A vista\n");
+                    pagamento = double.Parse(Console.ReadLine());
+                    switch (pagamento)
+                    {
+                        //Debito
+                        case 1:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //Credito
+                        case 2:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //a vista
+                        case 3:
+
+                            Console.WriteLine("TOTAL A PAGAR:{0}R$", Program.mesa3.Gasto);
+                            Console.WriteLine("Digite o valor recebido");
+                            recebido = double.Parse(Console.ReadLine());
+                            Console.WriteLine("O Troco é de {0}R$", recebido - Program.mesa3.Gasto);
+                            Console.WriteLine("Ogrigada pela compra, VOLTE SEMPRE");
+                            break;
+                    }
+                    #endregion
+                    break;
+
+                case 4:
+
+                    Console.WriteLine("A mesa 1 consumiu no total {0}R$", Program.mesa4.Gasto);
+                    #region Metodo de Pagamento
+                    Console.WriteLine("Escolha a forma de pagamento:/n");
+                    Console.WriteLine("1-Debito\n2-Credito\n3-A vista\n");
+                    pagamento = double.Parse(Console.ReadLine());
+                    switch (pagamento)
+                    {
+                        //Debito
+                        case 1:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //Credito
+                        case 2:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //a vista
+                        case 3:
+
+                            Console.WriteLine("TOTAL A PAGAR:{0}R$", Program.mesa4.Gasto);
+                            Console.WriteLine("Digite o valor recebido");
+                            recebido = double.Parse(Console.ReadLine());
+                            Console.WriteLine("O Troco é de {0}R$", recebido - Program.mesa4.Gasto);
+                            Console.WriteLine("Ogrigada pela compra, VOLTE SEMPRE");
+                            break;
+                    }
+                    #endregion
+                    break;
+
+                case 5:
+
+                    Console.WriteLine("A mesa 1 consumiu no total {0}R$", Program.mesa5.Gasto);
+                    #region Metodo de Pagamento
+                    Console.WriteLine("Escolha a forma de pagamento:/n");
+                    Console.WriteLine("1-Debito\n2-Credito\n3-A vista\n");
+                    pagamento = double.Parse(Console.ReadLine());
+                    switch (pagamento)
+                    {
+                        //Debito
+                        case 1:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //Credito
+                        case 2:
+                            Console.WriteLine("Insira o cartão");
+                            Console.ReadLine();
+                            Console.WriteLine("Digite a senha");
+                            Console.ReadLine();
+                            Console.WriteLine("Compra feito com sucesso\n\n");
+                            Console.WriteLine("Obrigada pela compra, volte sempre :)");
+                            break;
+                        //a vista
+                        case 3:
+
+                            Console.WriteLine("TOTAL A PAGAR:{0}R$", Program.mesa5.Gasto);
+                            Console.WriteLine("Digite o valor recebido");
+                            recebido = double.Parse(Console.ReadLine());
+                            Console.WriteLine("O Troco é de {0}R$", recebido - Program.mesa5.Gasto);
+                            Console.WriteLine("Ogrigada pela compra, VOLTE SEMPRE");
+                            break;
+                    }
+                    #endregion
+                    break;
+
+
+            }
+
+
+
         }
 
 
