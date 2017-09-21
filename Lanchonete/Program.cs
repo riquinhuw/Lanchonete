@@ -53,6 +53,7 @@ namespace Lanchonete
                         Console.WriteLine("{0} possiu {1} unidades",produto3.Nome,produto3.Quantidade);
                         Console.WriteLine("{0} possiu {1} unidades",produto4.Nome,produto4.Quantidade);
                         Console.WriteLine("{0} possiu {1} unidades",produto5.Nome,produto5.Quantidade);
+                        Console.ReadKey();
                         break;
 
                     case 4:

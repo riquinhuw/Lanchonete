@@ -14,16 +14,7 @@ namespace Lanchonete
             bool loopingVenda = true;
             string respostaLooping;
             int escolhaVenda = 0;
-            string nome1;
-            double preco1;
-            string nome2;
-            double preco2;
-            string nome3;
-            double preco3;
-            string nome4;
-            double preco4;
-            string nome5;
-            double preco5;
+
 
             string nome;
             double preco = 0;
